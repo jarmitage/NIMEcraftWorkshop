@@ -1,0 +1,15 @@
+#N canvas 2669 798 714 735 10;
+#X obj 35 33 inlet~;
+#X obj 35 55 lop~ \$1;
+#X obj 35 77 *~ \$2;
+#X obj 35 99 outlet~;
+#X obj 85 31 inlet;
+#X obj 130 30 inlet;
+#X text 97 101 <<< feedback loop to delwrite~;
+#X text 97 77 <<< decay [0-0.9999];
+#X text 97 57 <<< damping [100-20000];
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 4 0 1 1;
+#X connect 5 0 2 1;

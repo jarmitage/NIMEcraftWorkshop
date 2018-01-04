@@ -1,0 +1,16 @@
+#N canvas 2667 788 547 205 10;
+#X obj 31 20 inlet~;
+#X obj 81 21 inlet;
+#X obj 33 49 hip~ \$1;
+#X obj 128 21 inlet;
+#X obj 34 107 outlet~;
+#X text 133 49 <<< centre (i.e. DC block) signal with high-pass filter
+;
+#X text 146 82 <<< thresholding to remove any consistent noise in the
+excitation signal;
+#X obj 34 85 gate-transfer \$2;
+#X connect 0 0 2 0;
+#X connect 1 0 2 1;
+#X connect 2 0 7 0;
+#X connect 3 0 7 1;
+#X connect 7 0 4 0;
