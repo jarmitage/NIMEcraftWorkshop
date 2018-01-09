@@ -2,12 +2,12 @@
 #X obj 57 63 inlet~;
 #X obj 195 262 outlet~;
 #X obj 195 63 inlet~;
-#X obj 293 63 inlet~;
+#X obj 308 62 inlet~;
 #X obj 57 177 delwrite~ \$0-dw 100;
 #X obj 195 179 vd~ \$0-dw;
-#X text 56 35 sensor;
-#X text 195 39 string;
-#X text 292 40 feedback;
+#X text 307 39 feedback;
+#X text 55 35 sensor input;
+#X text 195 39 delay length;
 #X connect 0 0 4 0;
 #X connect 2 0 5 0;
 #X connect 3 0 4 0;
